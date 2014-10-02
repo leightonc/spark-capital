@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" id="view" content="width=device-width minimum-scale=1, maximum-scale=1" />
+
+  <title>Spark Capital</title>
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/style1.css">
+<link rel="stylesheet" href="stylesheets/color1.css">
+  
+  <!-- Google Fonts --> 
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+ 
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/modernizr.foundation.js"></script> 
+    
+  <!-- Slider Revolution JS FILES  -->
+  <script type="text/javascript" src="plugins/slider-revolution/jquery.themepunch.plugins.min.js"></script>
+  <script type="text/javascript" src="plugins/slider-revolution/jquery.themepunch.revolution.min.js"></script>
+  
+  <!-- Tooltips -->
+  <script type="text/javascript" src="javascripts/jquery.tipsy.js"></script>
+  
+  <!-- CarouFredSel plugin -->
+  <script type="text/javascript"  src="javascripts/jquery.carouFredSel-6.0.3-packed.js"></script>
+  <!-- optionally include helper plugins -->
+  <script type="text/javascript"  src="javascripts/jquery.touchSwipe.min.js"></script>
+    
+  <!-- Scripts Initialize -->
+  <script src="javascripts/app-head.js"></script> 
+  
+  <!-- GOOGLE Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
+  
+  <script type="text/javascript">
+  // GOOGLE MAPS
+      function initialize() {
+
+		  var mapOptions = {
+    		zoom: 16,
+    		center: new google.maps.LatLng(13.026584, 80.275899),
+    		mapTypeControl: true,
+   			mapTypeControlOptions: {
+      			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    			},
+    		zoomControl: true,
+    		zoomControlOptions: {
+      			style: google.maps.ZoomControlStyle.SMALL
+    			},
+    		mapTypeId: google.maps.MapTypeId.ROADMAP
+  			}
+  		var map = new google.maps.Map(document.getElementById("map_canvas"),
+      	mapOptions);
+      }  
+  </script>
+  
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+
+
+
+</head>
+<body onload="initialize()">
+
+<!-- Region 2 Wrap -->
+
+<div class="container region2wrap">
+  
+	<div class="row">
+    
+    	<!-- Logo -->
+            
+    	<div class="three columns">
+
+        	<a href="index.html" id="logo"><img src="images/logos/logo.png"></a>
+        
+  		</div>
+        
+        <!-- End Logo -->
+        
+        <!-- Main Navigation -->
+        
+        <div class="nine columns">
+
+			<nav class="top-bar">
+        
+    			<ul>
+      				<!-- Toggle Button Mobile -->
+      				<li class="name">
+        			<h1><a href="#"> Menu</a></h1>
+      				</li>
+      				<li class="toggle-topbar"><a href="#"></a></li>
+                    <!-- End Toggle Button Mobile -->
+    			</ul>
+
+
+
+      			<section><!-- Nav Section -->
+      			<ul class="right">
+        
+              <li><a href="about.html">About</a></li>
+              <li class="has-dropdown">
+                  <a href="#">Services</a>
+                    <ul class="dropdown">         
+                      <li><a href="index.html">Investment Banking</a></li>
+                      <li><a href="index.html">Institutional Equities</a></li>
+                      <li><a href="index.html">Spark Infra</a></li>
+                    </ul>
+              </li>
+        
+              <li><a href="index.html">Transactions</a></li>
+        
+              <li><a class="active" href="contact.html">Contact</a></li>
+        
+            </ul>
+                </section><!-- End Nav Section -->
+
+  			</nav>            
+        
+    	</div>
+        
+        <!-- End Main Navigation -->         
+        
+	</div>
+    
+</div>
+  
+<!-- End Region 2 Wrap -->
+
+<!-- Region 3 Wrap -->
+
+  <div class="container region3wrap">  
+  
+    
+    <!-- Content Top -->  
+  	<div class="row content_top">
+        
+    	<div class="nine columns">
+       
+			<ul class="breadcrumbs">
+ 				<li><a href="index.html">Home</a></li>
+  				<li class="current"><a href="#">Contact</a></li>
+			</ul>
+
+		</div>
+        
+        <div class="three columns">
+
+			<div class="row">
+ 				<div class="twelve columns">
+    				<div class="row collapse top_search">
+      					<div class="ten mobile-three columns">
+        					<input type="text" placeholder="Enter search terms" />
+      					</div>
+      					<div class="two mobile-one columns">
+        					<a href="#" class="button icon-search"></a>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+
+		</div>
+        
+  	</div>
+    <!-- End Content Top -->
+    
+  </div>
+  
+<!-- End Region 3 Wrap -->
+
+<!-- Region 4 Wrap -->
+
+  <div class="container region4wrap">
+  
+  	<div class="row maincontent contact">
+    
+    	<div class="twelve columns">
+        	
+        	<div class="page_title">
+        
+        		<div class="row">
+            	
+            		<div class="twelve columns">
+        				<h1>Contact Us</h1>
+            		</div>
+            
+            	</div>
+                
+        	</div>
+        
+        </div>
+        
+        <div class="twelve columns">        	
+            <div class="map_location">
+        		<div id="map_canvas"></div>
+            </div>        
+        </div>
+       
+       <div class="four columns">
+       
+       		<h3>Chennai</h3>
+            <div class="contact-details">
+            	<p><span>Address:</span><br/>New No. 2, Reflections<br/>Leith Castle Center Street<br/>Santhome High Road<br/>Chennai – 600 028.</p>
+            	<p><span>Phone:</span> +91 44 43440000</p>
+            	<p><span>Fax:</span> +91 44 4344 0080/90</p>
+            </div>
+            <h3>Bangalore</h3>
+            <div class="contact-details">
+              <p><span>Address:</span><br/>No. 458, 4th Block, 8th Main,<br/>60Ft Road, Koramangala,<br/>Bangalore – 560 034</p>
+              <p><span>Phone:</span> +91 80 4919 3500</p>
+              <p><span>Fax:</span> +91 80 4919 3506</p>
+            </div>
+            <h3>Mumbai</h3>
+            <div class="contact-details">
+              <p><span>Address:</span><br/>702, 7th Floor, Balarama<br/>Bandra Kurla Complex, Bandra East<br/>Mumbai 400 051.</p>
+              <p><span>Phone:</span> +91 22 32232421, +91 22 32208420</p>
+            </div>                  
+       </div>
+       
+       <div class="eight columns">
+			
+            <h3>Send us a message</h3>
+			<form>
+
+  			<div class="row">
+    			<div class="four columns">
+                <label>Name</label>
+      			<input type="text" />
+    			</div>
+    			<div class="four columns">
+                <label>E-mail</label>
+      			<input type="text" />
+    			</div>
+    			<div class="four columns">
+                <label>Subject</label>
+      			<input type="text" />
+    			</div>
+  			</div>
+            <div class="row">
+    			<div class="twelve columns">
+                <label>Message</label>
+      			<textarea></textarea>
+    			</div>
+  			</div>
+            
+            <a href="#" class="medium button">Submit</a>            
+			</form>
+       
+       </div>
+        
+  	</div>
+    
+  </div>
+  
+<!-- End Region 4 Wrap -->
+
+<!-- Region 9 Wrap -->
+
+  <div class="container region9wrap">
+  
+  	 <!-- Bottom Content -->
+    <div class="row content_bottom">
+    
+    	<!-- // // // // // // // // // // -->
+        
+    	<div class="eight columns">
+       
+			<h2>Sign up for our newsletter</h2>
+            <p>Keep up-to-date with the latest news and updates by subscribing to our newsletter.</p>
+            
+		</div>
+        
+        <!-- // // // // // // // // // // -->
+        
+        <div class="four columns">
+			<div class="row collapse newsletter-input">
+				<div class="eight mobile-three columns">
+					<input type="text" placeholder="Enter your email address" />
+				</div>
+				<div class="four mobile-one columns">
+					<a href="#" class="button expand">Subscribe</a>
+				</div>
+			</div>
+		</div>
+        
+        <!-- // // // // // // // // // // -->        
+        
+  	</div>
+    <!-- End Bottom Content -->
+    
+    <!-- Footer -->  
+  	<div class="row footer">
+        
+        <!-- // // // // // // // // // // -->
+        
+        <div class="four columns">
+        
+        	<h4>About Us</h4>
+          <p>Do get in touch with us at:</p>
+          <ul class="vcard">
+                <li class="address">New No. 2, Reflections, Leith Castle Center Street, Santhome High Road, Chennai – 600 028.</li>
+        <li class="tel"><a href="1234567890">+91 44 4344 0000</a></li>
+      </ul>
+
+   	    </div>
+        
+        <!-- // // // // // // // // // // -->
+        
+        <div class="four columns">
+        
+        	<h4>Latest Posts</h4>
+			
+            <ul class="footer-list">
+            	<li><a href="#">Mauris pellentesque laoreet lacus non condimentum.</a></li>
+  				<li><a href="#">Vestibulum vel diam orci vitae.</a></li>
+                <li><a href="#">Suspendisse elementum magna sed lorem faucibus eleifend.</a></li>
+  				<li><a href="#">Phasellus placerat convallis congue.</a></li>
+  				<li><a href="#">Etiam vehicula lacus fringilla lacus tristique pretium.</a></li>
+			</ul>  
+
+   	    </div>
+        
+        <!-- // // // // // // // // // // -->
+        
+        <div class="four columns">
+        
+            <h4>Latest Tweets</h4>
+            
+			<ul class="footer-list twitter">
+          <li>@spark New product launch.<a href="#">sparkcapital.in</a><a class="twit-date">28 minutes ago</a></li>
+              <li>@spark Torrent Pharmaceuticals just launched by Spark.<a href="#">sparkcapital.in</a><a class="twit-date">2 days ago</a></li>   
+      </ul> 
+
+   	    </div>
+        
+        <!-- // // // // // // // // // // -->
+        
+  	</div>
+    <!-- End Footer -->
+    
+  </div>
+  
+<!-- End Region 9 Wrap -->
+
+<!-- Region 10 Wrap -->
+
+  <div class="container region10wrap">
+  
+  	<div class="row footer_bottom">
+       
+        <!-- Bottom -->
+        
+        <!-- // // // // // // // // // // -->
+        
+        <div class="six columns">
+        
+        	<p class="copyright">© 2014 Spark Capital. All rights reserved</p>
+
+   	    </div>
+        
+        <!-- // // // // // // // // // // -->
+        
+        <div class="six columns">
+        
+			<ul class="link-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Transactions</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+
+   	    </div>
+        
+        <!-- // // // // // // // // // // -->
+        
+        <!-- Bottom -->
+        
+  	</div>
+  </div>
+  
+<!-- End Region 10 Wrap -->
+
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  
+  -->
+  
+<!-- Back To Top -->
+  <a href="#" class="scrollup">Scroll</a>
+<!-- End Back To Top -->
+  
+  
+<!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  
+</body>
+</html>
